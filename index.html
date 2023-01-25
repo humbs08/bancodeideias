@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Banco de Ideias</title>
+  <link rel="icon" type="image/x-icon" href=" favicon.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Georgian&family=Roboto+Serif:ital,opsz,wght@0,8..144,100;0,8..144,200;0,8..144,300;0,8..144,400;0,8..144,500;1,8..144,100;1,8..144,200;1,8..144,300;1,8..144,400;1,8..144,500;1,8..144,800&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href=" style.css">
+
+
+</head>
+
+<div class="super-info">
+  <div class="topinfo">
+    <p> Seg / Sex - 14:00 às 22:00 </p>
+    <a href="558388776655"> +55 83 8868-0104</a>
+    </p> Engenharia Industrial </p>
+  </div>
+</div>
+
+<header class="menu-bg">
+  <div class="menu">
+    <div class="logo">
+      <a href="htmlindex.html"> <img src=" logo.svg" Alt="logo"></a>
+    </div>
+
+    <nav class="menu-nav">
+      <ul>
+        <li> <a href="index.html">Home</a></li>
+        <li> <a href="contato.html">Envie seu projeto</a></li>
+
+
+      </ul>
+
+    </nav>
+</header>
+
+
+<div class="introdução">
+  <h1>Compartilhe suas ideias e<br>Mostre para todos os resultados </h1>
+</div>
+
+<section class="sobre" id="sobre">
+
+  <div class="sobre-info">
+    <h1>Sobre</h1>
+    <p>O projeto do banco de ideias surgiu em uma conversa entre amigos na engenharia industrial onde percebemos a necessidade de promover a divulgação dos projetos. Algumas pessoas estavam criando projetos para um problema onde já existia uma solução criada, todavia eles não sabiam pois a comunicação não é tão boa.<br><br>
+      Com o banco de ideias todos podem ter acesso aos projetos que estão em andamento e podem replicar ou adaptar para o seu setor e, até mesmo, ajudar a melhorar os projetos já existentes entrando em contato com o criador e trocando conhecimentos.</p>
+  </div>
+
+  <div class="sobre-img">
+    <figure class="hover-rotate">
+      <img src=" alpa.svg" alt="sobre 1">
+    </figure>
+  </div>
+
+</section>
+
+<!--Image slider start-->
+
+<div class="slideshow-container">
+
+  <div class="mySlides fade">
+    <img src=" slide1.jpg">
+    <div class="text">Coofee Break</div>
+  </div>
+
+  <div class="mySlides fade">
+
+    <img src=" slide2.jpg">
+    <div class="text">Projetos em andamento</div>
+  </div>
+
+  <div class="mySlides fade">
+    <img src=" slide3.jpg">
+    <div class="text">Team</div>
+  </div>
+
+  <div class="mySlides fade">
+    <img src=" slide4.jpg">
+    <div class="text">Reunião</div>
+  </div>
+
+  <div class="mySlides fade">
+    <img src=" slide3.jpg">
+    <div class="text">Caption Three</div>
+  </div>
+
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+</div>
+
+<script>
+  let slideIndex = 0;
+  showSlides();
+
+  function showSlides() {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) { slideIndex = 1 }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex - 1].style.display = "block";
+    dots[slideIndex - 1].className += " active";
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
+  }
+</script>
+
+<!--slide navigation end-->
+</div>
+
+<div class="text-h1">
+  <h1 class="text-h1">Fique por dentro de todas as melhorias que estão <br>acontecendo nos setores!</h1>
+</div>
+
+<section class="produtos" id="container">
+  <div class="produtos-container">
+    <div class="produtos-item">
+      <a href="ugb1.html">
+        <h2>UGB1</h2>
+        <img src=" produtos1.jpg" Alt="UGB1">
+      </a>
+    </div>
+
+    <div class="produtos-item">
+      <a href="ugb2.html">
+        <h2>UGB2</h2>
+        <img src=" produtos2.jpg" Alt="UGB2">
+      </a>
+    </div>
+
+    <div class="produtos-item">
+      <a href="ugb3.html">
+        <h2>UGB3</h2>
+        <img src=" produtos3.jpg" Alt="UGB3">
+      </a>
+    </div>
+  </div>
+
+</section>
+
+<blockquote class="quote">
+  <p>"O sucesso nasce do querer, da determinação e persistência em se chegar a um objetivo. Mesmo não atingindo o alvo, quem busca e vence obstáculos, no mínimo fará coisas admiráveis.”</p>
+
+  <h4>JOSÉ DE ALENCAR</h4>
+</blockquote>
+
+
+<footer class="footer">
+  <p>Humbs - Todos os direitos reservados</p>
+</footer>
+
+</body>
+
+</html>
