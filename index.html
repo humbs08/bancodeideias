@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 
@@ -5,11 +6,12 @@
   <title>Banco de Ideias</title>
   <link rel="icon" type="image/x-icon" href=" favicon.png">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css"/>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Georgian&family=Roboto+Serif:ital,opsz,wght@0,8..144,100;0,8..144,200;0,8..144,300;0,8..144,400;0,8..144,500;1,8..144,100;1,8..144,200;1,8..144,300;1,8..144,400;1,8..144,500;1,8..144,800&display=swap" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href=" style.css">
 
 
 </head>
@@ -25,7 +27,7 @@
 <header class="menu-bg">
   <div class="menu">
     <div class="logo">
-      <a href="index.html"> <img src=" logo.svg" Alt="logo"></a>
+      <a href="index.html"> <img src="logo.svg" Alt="logo"></a>
     </div>
 
     <nav class="menu-nav">
@@ -62,66 +64,96 @@
 
 <!--Image slider start-->
 
-<div class="slideshow-container">
-
-  <div class="mySlides fade">
-    <img src=" slide1.jpg">
-    <div class="text">Coofee Break</div>
+<div class="wrapper">
+  <div class="slide-wrapper" data-slide="wrapper">
+      <button class="slide-nav-button slide-nav-previous fas fa-chevron-left" data-slide="nav-previous-button"></button>
+      <button class="slide-nav-button slide-nav-next fas fa-chevron-right" data-slide="nav-next-button"></button>
+      
+      <div class="slide-list" data-slide="list">
+          <div class="slide-item" data-slide="item" data-index="0">
+              <div class="slide-content">
+                  <img class="slide-image" src="slide1.jpg" alt="Assassin's Creed" />
+                  <div class="slide-description">
+                      <h3>Coffee Break</h3>
+                      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit</p>
+                  </div>
+              </div>
+          </div>
+          <div class="slide-item" data-slide="item" data-index="1">
+              <div class="slide-content">
+                  <img class="slide-image" src="slide2.jpg" alt="Fortnite" />
+                  <div class="slide-description">
+                      <h3>Projetos em andamento</h3>
+                      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit</p>
+                  </div>
+              </div>
+          </div>
+          <div class="slide-item" data-slide="item" data-index="2">
+              <div class="slide-content">
+                  <img class="slide-image" src="slide3.jpg" alt="Freefire" />
+                  <div class="slide-description">
+                      <h3>Reunião com time</h3>
+                      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit</p>
+                  </div>
+              </div>
+          </div>
+          <div class="slide-item" data-slide="item" data-index="3">
+              <div class="slide-content">
+                  <img class="slide-image" src="slide4.jpg" alt="GTA V" />
+                  <div class="slide-description">
+                      <h3>Engenharia Industrial</h3>
+                      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit</p>
+                  </div>
+              </div>
+          </div>
+          <div class="slide-item" data-slide="item" data-index="4">
+              <div class="slide-content">
+                  <img class="slide-image" src="slide1.jpg" alt="Halo 5" />
+                  <div class="slide-description">
+                      <h3>Coffeee Break</h3>
+                      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit</p>
+                  </div>
+              </div>
+          </div>
+          <div class="slide-item" data-slide="item" data-index="5">
+              <div class="slide-content">
+                  <img class="slide-image" src="slide2.jpg" alt="League of Legends" />
+                  <div class="slide-description">
+                      <h3>Projetos em andamento</h3>
+                      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit</p>
+                  </div>
+              </div>
+          </div>
+          <div class="slide-item" data-slide="item" data-index="6">
+              <div class="slide-content">
+                  <img class="slide-image" src="slide3.jpg" alt="Red Dead Redemption 2" />
+                  <div class="slide-description">
+                      <h3>Engenharia Industrial</h3>
+                      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit</p>
+                  </div>
+              </div>
+          </div>
+          <div class="slide-item" data-slide="item" data-index="7">
+              <div class="slide-content">
+                  <img class="slide-image" src="slide4.jpg" alt="Zelda" />
+                  <div class="slide-description">
+                      <h3>Reunião</h3>
+                      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="slide-controls" data-slide="controls-wrapper">
+      </div>
   </div>
-
-  <div class="mySlides fade">
-
-    <img src=" slide2.jpg">
-    <div class="text">Projetos em andamento</div>
-  </div>
-
-  <div class="mySlides fade">
-    <img src=" slide3.jpg">
-    <div class="text">Team</div>
-  </div>
-
-  <div class="mySlides fade">
-    <img src=" slide4.jpg">
-    <div class="text">Reunião</div>
-  </div>
-
-  <div class="mySlides fade">
-    <img src=" slide3.jpg">
-    <div class="text">Caption Three</div>
-  </div>
-
-
 </div>
-<br>
-
-<div style="text-align:center">
-  <span class="dot"></span>
-  <span class="dot"></span>
-  <span class="dot"></span>
-  <span class="dot"></span>
-  <span class="dot"></span>
-</div>
-
+<script src="slides.js"></script>
 <script>
-  let slideIndex = 0;
-  showSlides();
-
-  function showSlides() {
-    let i;
-    let slides = document.getElementsByClassName("mySlides");
-    let dots = document.getElementsByClassName("dot");
-    for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-    }
-    slideIndex++;
-    if (slideIndex > slides.length) { slideIndex = 1 }
-    for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-    }
-    slides[slideIndex - 1].style.display = "block";
-    dots[slideIndex - 1].className += " active";
-    setTimeout(showSlides, 2000); // Change image every 2 seconds
-  }
+  initSlider({
+      autoPlay: true,
+      startAtIndex: 0,
+      timeInterval: 2000
+  })
 </script>
 
 <!--slide navigation end-->
